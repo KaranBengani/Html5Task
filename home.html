@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        section{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        article{
+            width: 50%;
+        }
+        iframe{
+            border-radius: 12px;
+        }
+    </style>
+    <section>
+        <article>
+    <h1>About us</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eligendi sit illum doloribus eaque optio consectetur rerum? Quas molestias non voluptates ea perspiciatis dignissimos nisi laborum vitae praesentium? Voluptates, quisquam?</p>
+    <canvas id="myCanvas" width="200" height="100" style="border:15px solid #d3d3d3;">
+        Your browser does not support the HTML5 canvas tag.</canvas>
+    <div></div>
+        <script>
+        
+        var c=document.getElementById("myCanvas");
+        var ctx=c.getContext("2d");
+        ctx.font="30px Arial";
+        ctx.strokeText("Hello World",20,90);
+        
+        </script>
+    </article> 
+       <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jutp3ZIlqJg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+       </div>
+    </section>
+</body>
+</html>

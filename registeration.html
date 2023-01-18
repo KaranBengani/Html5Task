@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reg from</title>
+</head>
+<body>
+    <style>
+        section{
+            padding-left: 3rem;
+            background-color: rgb(120, 186, 153);
+            max-width: 30%;
+            border: 2px solid ;
+            border-radius: 7px;
+        }
+        h2{
+            text-align: left;
+            
+        }
+        input,select, textarea{
+            margin-bottom: 1rem;
+            border-radius: 4px;
+            width: auto;
+        }
+        label{
+            color: rgb(12, 12, 11);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 400;
+        }
+        #submit{
+            padding: 6px;
+            background-color: transparent;
+        }
+        #submit:hover{
+            background-color: aquamarine;
+        }
+    </style>
+    <section>
+        <h2>Registeration for LVC</h2>
+        <br>
+        <form action="" id="form">
+            <label for="name">Name : </label>
+            <Input type="text" required id="name"></Input>
+            <br>
+            <label for=""> Gender : </label>
+            <label for="genderM">Male</label>
+            <Input type="radio"id="genderM"></Input>
+            <label for="genderF">Female</label>
+            <Input type="radio" id="genderF"></Input>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+            <br>
+            <label for="location">Location</label>
+            <select id="location" name="locations">
+                <option value="mumbai">Mumbai</option>
+                <option value="mumbai">Pune</option>
+            </select>
+            <br>
+            <label for="">Sofware Knowledge</label>
+            <br>
+            <div>
+            <input type="checkbox" id="skill1" value="JS">
+            <label for="skill1">Js</label><br>
+            <input type="checkbox" id="skill2" value="CSS3">
+            <label for="skill2">Css3</label><br>
+            <input type="checkbox" id="skill3" value="HTML5">
+            <label for="skill3">Html5</label>
+            </div>
+            <br>
+            <label for="remarks">Remarks</label>
+            <br>
+            <br>
+            <textarea name="remarks" id="remarks" cols="30" rows="10"></textarea>
+            <br>
+            <input type="submit" name="" id="submit">
+        </form>
+    </section>
+
+    <script>
+        document.getElementById("form").addEventListener("submit", (e) => {
+            e.preventDefault();
+            // let name =
+            alert ("Your Records Have been submitted")
+        })
+    </script>
+</body>
+</html>

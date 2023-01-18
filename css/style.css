@@ -1,0 +1,57 @@
+body {font-family: Verdana, sans-serif; font-size:0.8em;}
+header,nav, section,article,footer,figure
+{border:1px solid green; margin:5px; padding:8px;}
+nav ul {margin:0; padding:0;}
+nav ul li {display:inline; margin:5px;}
+header h1{
+    padding: 3rem;
+    color: white;
+    background-image: url("../images/classroom-school-old-classroom-blackboard.jpeg");
+    height: 30vh;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: green;
+}
+section{
+    height: 40vh;
+}
+
+a:visited{
+    color: grey;
+}
+a:hover{
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+a:active {
+    color: aqua;
+}
+
+.gallery img{
+    /* display: flex;
+    justify-content: space-evenly; */
+    animation-name: ads;
+    animation-duration: 10s;
+    /* animation-timing-function: ease-in; */
+}
+/* .gallery img {
+    width: 20%;
+    height: 18%;
+} */
+
+@keyframes ads {
+    from {
+        left: 0px;
+    }
+
+    to {
+        right: 0px;
+    }
+}
+
+.carousel-inner img{
+    height: 60vh;
+}

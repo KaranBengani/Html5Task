@@ -1,0 +1,15 @@
+#table{
+    border: 2px solid teal;
+}
+
+/* .img{
+    box-shadow: 10px 7px 5px rgb(163, 159, 159);
+} */
+
+.row3 img {
+    filter: sepia(100%);
+}
+.img{
+    filter: drop-shadow(3px 5px 5px orange);
+}
+
