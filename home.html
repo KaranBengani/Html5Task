@@ -11,6 +11,7 @@
         section{
             display: flex;
             justify-content: space-evenly;
+            padding-top: 50px;
         }
         article{
             width: 50%;
@@ -18,14 +19,27 @@
         iframe{
             border-radius: 12px;
         }
+        h1{
+            font-size: 3rem;
+        }
+        .canvas{
+            animation-name: color-change;
+            animation-duration: 5s;
+        }
+        @keyframes color-changes {
+            from {background-color: white;}
+            to { background-color: teal;}
+        }
     </style>
     <section>
         <article>
     <h1>About us</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eligendi sit illum doloribus eaque optio consectetur rerum? Quas molestias non voluptates ea perspiciatis dignissimos nisi laborum vitae praesentium? Voluptates, quisquam?</p>
-    <canvas id="myCanvas" width="200" height="100" style="border:15px solid #d3d3d3;">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, necessitatibus! Sunt nisi vel dicta enim natus. Id possimus odit odio nemo laudantium velit necessitatibus alias labore asperiores reprehenderit, ea vero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias explicabo necessitatibus, numquam architecto nemo iusto minus similique aut! Facilis commodi molestiae deleniti facere, distinctio dolorem animi officia recusandae error nesciunt!</p>
+    <!-- <div class="canvas">
+    <canvas id="myCanvas" width="200" height="100">
         Your browser does not support the HTML5 canvas tag.</canvas>
-    <div></div>
+    </div>
         <script>
         
         var c=document.getElementById("myCanvas");
@@ -33,7 +47,7 @@
         ctx.font="30px Arial";
         ctx.strokeText("Hello World",20,90);
         
-        </script>
+        </script> -->
     </article> 
        <div class="video">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/jutp3ZIlqJg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

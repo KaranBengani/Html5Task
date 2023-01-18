@@ -8,12 +8,16 @@
 </head>
 <body>
     <style>
-        section{
-            padding-left: 3rem;
+        .section{
+            padding-left: 1rem;
             background-color: rgb(120, 186, 153);
-            max-width: 30%;
+            width: 50%;
             border: 2px solid ;
             border-radius: 7px;
+            
+        }
+        #form{
+            margin: 0 auto;
         }
         h2{
             text-align: left;
@@ -36,8 +40,14 @@
         #submit:hover{
             background-color: aquamarine;
         }
+        .container{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
     </style>
-    <section>
+    <section class="container">
+    <section class="section">
         <h2>Registeration for LVC</h2>
         <br>
         <form action="" id="form">
@@ -78,7 +88,11 @@
             <input type="submit" name="" id="submit">
         </form>
     </section>
-
+    <section class="lottie">
+        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_tpa51dr0.json"  background="transparent"  speed="1"  style="width: 500px; height: 500px;"  loop autoplay></lottie-player>
+    </section>
+    </section>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script>
         document.getElementById("form").addEventListener("submit", (e) => {
             e.preventDefault();
