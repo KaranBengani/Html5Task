@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="form1">
+
+        name <input type="text" name="name">
+        <button type="submit" onclick="func1()">submit</button>
+    </form>
+    <script>
+        function func1(){
+            var name = form1.name.value;
+            if (name == ""){
+                alert('name needed');
+            }
+            else {
+                alert('hooray');
+            }
+        }
+    </script>
+</body>
+</html>

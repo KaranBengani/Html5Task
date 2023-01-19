@@ -1,19 +1,19 @@
 body {font-family: Verdana, sans-serif; font-size:0.8em;}
-header, nav,section,article,footer,figure
+/* header,section,article,footer,figure
 {border:1px solid rgb(6, 6, 6); 
     border-radius: 12px;
-    margin:5px; padding:8px;}
+    margin:5px; padding:8px;} */
 /* nav ul {margin:0; padding:0;}
 nav ul {display:flex; 
     justify-content: space-evenly;
     margin:5px;} */
-header h1{
+/* header h1{
     padding: 3rem;
     color: white;
     background-image: url("../images/classroom-school-old-classroom-blackboard.jpeg");
     height: 30vh;
     margin: 0;
-}
+} */
 /* a{
     text-decoration: none;
     color: green;
@@ -46,25 +46,29 @@ a:active {
     height: 18%;
 } */
 
-@keyframes ads {
-    from {
-        left: 0px;
-    }
-
-    to {
-        right: 0px;
-    }
-}
-
 .carousel-inner img{
     height: 60vh;
 }
 
-nav {
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 4rem !important;
-    background-color: antiquewhite;
+nav{
+    font-size: 1.2rem;
+    color: white !important;
+}
+
+.navbar-brand{
+    color: white;
+}
+
+header{
+    background-image: url("../images/empty-blackboard.jpg");
+    height: 60vh;
+    background-size: cover;
+}
+
+@media screen and (min-width: 990px) {
+    .nav-item{
+    margin-right: 30px;
+}
 }
 
 footer{
