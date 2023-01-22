@@ -1,70 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/photo.css">
-</head>
-<body>
-    <style>
-        .img{
-            border-radius: 12px;
-            transition: transform .2s;
-        }
-        .img:hover {
-            transform: scale(1.2);
-            cursor: pointer;
-        }
-        img{
-            width: 300px;
-        }
-        section{
-            width: 70%;
-            margin: 0 auto;
-        }
-        h1{
-            text-align: center;
-        }
-    </style>
-    <h1>Photo Gallery</h1>
-    <section>
-        <table id="table" style="padding: 10px;">
-            <tr>
-                <td>
-                    <img class="img" src="./images/gallery1.jpeg" alt="">
-                </td>
-                <td>
-                    <img class="img imgSepia" src="./images/gallery2.jpeg" alt="">
-                </td>
-                <td>
-                    <img class="img" src="./images/gallery3.jpeg" alt="">
-                </td>
-            </tr>
-            <tr style="opacity: 0.5;">
-                <td>
-                    <img class="img"src="./images/gallery4.jpeg" alt="">
-                </td>
-                <td>
-                    <img class="img" src="./images/gallery5.jpeg" alt="">
-                </td>
-                <td>
-                    <img class="img" src="./images/gallery6.jpeg" alt="">
-                </td>
-            </tr>
-            <tr class="row3">
-                <td>
-                    <img class="img" src="./images/gallery1.jpeg" alt="">
-                </td>
-                <td>
-                    <img class="img" src="./images/gallery2.jpeg" alt="">
-                </td>
-                <td>
-                    <img class="img" src="./images/gallery3.jpeg" alt="">
-                </td>
-            </tr>
-        </table>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/photo.css" />
+  </head>
+  <body>
+    <section class="container p-3">
+      <h1>Photo Gallery</h1>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="./images/gallery1.jpeg" class="card-img-top" alt="..." />
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/gallery2.jpeg" class="card-img-top" alt="..." />
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/gallery3.jpeg" class="card-img-top" alt="..." />
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="./images/gallery4.jpeg"
+              class="card-img-top img"
+              alt="..."
+            />
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="./images/gallery5.jpeg"
+              class="card-img-top img"
+              alt="..."
+            />
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="./images/gallery6.jpeg"
+              class="card-img-top img"
+              alt="..."
+            />
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/gallery1.jpeg" class="card-img-top" alt="..." />
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/gallery2.jpeg" class="card-img-top" alt="..." />
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/gallery4.jpeg" class="card-img-top" alt="..." />
+          </div>
+        </div>
+      </div>
     </section>
-</body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

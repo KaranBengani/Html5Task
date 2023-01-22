@@ -6,10 +6,19 @@
     box-shadow: 10px 7px 5px rgb(163, 159, 159);
 } */
 
-.row3 img {
+.img {
     filter: sepia(100%);
 }
-.img{
+img{
     filter: drop-shadow(3px 5px 5px orange);
 }
 
+img{
+    border-radius: 12px;
+    transition: transform .2s;
+    cursor: pointer;
+}
+img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}

@@ -53,42 +53,42 @@
     <section class="section">
         <h2>Registeration for LVC</h2>
         <br>
-        <form action="" id="form">
+        <form id="form" name="frm1" action="./thanks.html">
             <label for="name">Name : </label>
-            <Input type="text" required id="name"></Input>
+            <Input type="text" name="name" id="name"></Input>
             <br>
             <label for=""> Gender : </label>
             <label for="genderM">Male</label>
-            <Input type="radio"id="genderM"></Input>
+            <Input type="radio"id="genderM" name="r1" value="Male"></Input>
             <label for="genderF">Female</label>
-            <Input type="radio" id="genderF"></Input>
+            <Input type="radio" id="genderF" name="r1" valu="Female"></Input>
             <br>
             <label for="email">Email</label>
-            <input type="email" id="email" required>
+            <input type="email" id="email" name="email">
             <br>
-            <label for="location">Location</label>
+            <label for="location">Software knowledge</label>
             <select id="location" name="locations">
-                <option value="mumbai">Mumbai</option>
-                <option value="mumbai">Pune</option>
+                <option value="JS" name="loc1">Js</option>
+                <option value="CSS3" name="loc1">Css3</option>
+                <option value="MERN" name="loc1">MERN</option>
+                <option value="MEAN" name="loc1">MEAN</option>
             </select>
             <br>
-            <label for="">Sofware Knowledge</label>
-            <br>
-            <div>
+            <!-- <div>
             <input type="checkbox" id="skill1" value="JS">
             <label for="skill1">Js</label><br>
             <input type="checkbox" id="skill2" value="CSS3">
             <label for="skill2">Css3</label><br>
             <input type="checkbox" id="skill3" value="HTML5">
             <label for="skill3">Html5</label>
-            </div>
+            </div> -->
             <br>
             <label for="remarks">Remarks</label>
             <br>
             <br>
             <textarea name="remarks" id="remarks" cols="30" rows="10"></textarea>
             <br>
-            <input type="submit" name="" id="submit">
+            <button type="submit" name="" id="submit" onsubmit="return validate(event)">submit</button>
         </form>
     </section>
     <section class="lottie">
@@ -96,12 +96,13 @@
     </section>
     </section>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script>
+    <!-- <script>
         document.getElementById("form").addEventListener("submit", (e) => {
             e.preventDefault();
             // let name =
             alert ("Your Records Have been submitted")
         })
-    </script>
+    </script> -->
+    <script src="./js/reg.js"></script>
 </body>
 </html>

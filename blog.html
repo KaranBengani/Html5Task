@@ -1,64 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-
-</head>
-<body>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
     <style>
-        nav ul {margin:0; padding:0;}
-nav ul li {display:inline; margin:5px;}
-p {
-    width: 70%;
-}
-    .col-count{
+      nav ul {
+        margin: 0;
+        padding: 0;
+      }
+      nav ul li {
+        display: inline;
+        margin: 5px;
+      }
+      p {
+        width: 70%;
+      }
+      .col-count {
         column-count: 3;
-    }
-    
-    @media screen and (max-width: 660px) {
-        section{
-            background-color: antiquewhite;
-        }
-        section h1{
-            color: red;
-        }
-        .col-count{
-            column-count: 2;
-        }
-        a{
-            text-decoration: none;
-        }
-    }
-    </style>
-    <nav class="m-1">
-        <ul>
-            <li><a href="#music" class="btn btn-outline-success">Music</a></li>
-            <li><a href="#dance" class="btn btn-outline-success">Dance</a></li>
-            <li><a href="#singing" class="btn btn-outline-success">Singing</a></li>
-        </ul>
-    </nav>
+      }
 
-    <section class="p-5">
-        <h1>About the blog</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos sapiente vitae doloremque perferendis? Dolore veritatis, rem tenetur quia esse incidunt adipisci animi. Optio modi reiciendis inventore? Maxime hic veritatis dolorem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam voluptas dolore voluptate dignissimos dolorem dolorum odit, nisi necessitatibus quaerat facilis non. Distinctio recusandae aliquid unde, deleniti perspiciatis cum esse minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti blanditiis nobis ipsa quaerat neque placeat eum sed. Harum, esse animi eveniet nostrum temporibus eligendi perferendis consequuntur fuga quas, unde fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iste eum atque pariatur inventore quam eveniet repellat aspernatur repellendus in molestias quia similique dolore dolorum, porro natus! Blanditiis, enim quasi.</p>
-        <h3 id="music">About music</h3>
+      @media screen and (max-width: 660px) {
+        section {
+          background-color: antiquewhite;
+        }
+        section h1 {
+          color: red;
+        }
+        .col-count {
+          column-count: 2;
+        }
+        a {
+          text-decoration: none;
+        }
+      }
+      .back {
+        right: 10%;
+        bottom: 10%;
+      }
+    </style>
+
+    <section class="container pt-5">
+      <div
+        class="btn-group mb-5"
+        role="group"
+        aria-label="Basic outlined example"
+      >
+        <a type="button" href="#music" class="btn btn-outline-success">Music</a>
+        <a type="button" href="#dance" class="btn btn-outline-success">Dance</a>
+        <a type="button" href="#singing" class="btn btn-outline-success"
+          >Singing</a
+        >
+      </div>
+
+      <a
+        href="#top"
+        type="button"
+        class="btn btn-outline-success position-fixed back"
+      >
+        Back to Top</a
+      >
+
+      <h1 id="top">About the blog</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos
+        sapiente vitae doloremque perferendis? Dolore veritatis, rem tenetur
+        quia esse incidunt adipisci animi. Optio modi reiciendis inventore?
+        Maxime hic veritatis dolorem. Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Quibusdam voluptas dolore voluptate dignissimos
+        dolorem dolorum odit, nisi necessitatibus quaerat facilis non.
+        Distinctio recusandae aliquid unde, deleniti perspiciatis cum esse
+        minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Corrupti blanditiis nobis ipsa quaerat neque placeat eum sed. Harum,
+        esse animi eveniet nostrum temporibus eligendi perferendis consequuntur
+        fuga quas, unde fugiat? Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Quasi iste eum atque pariatur inventore quam eveniet
+        repellat aspernatur repellendus in molestias quia similique dolore
+        dolorum, porro natus! Blanditiis, enim quasi.
+      </p>
+      <div data-aos="fade-left" id="music">
+        <h3>About music</h3>
         <p class="col-count">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam eos tempore placeat autem qui molestias quasi itaque incidunt vero quam dicta unde vitae aliquid accusamus nesciunt facere accusantium, atque ducimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse neque necessitatibus ea, tempora maiores nihil. Distinctio rem tempore rerum adipisci amet, atque quasi id eaque repudiandae consectetur consequatur, sed velit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione et voluptas debitis quidem odit sed ea nulla, quisquam optio ipsa saepe aspernatur nisi labore iusto illum non alias! Facere, repudiandae. Lorem ipsum dolor, sit amet consectetur adipisicing elit. In accusamus iusto architecto provident vero corrupti ipsum praesentium expedita commodi dolor optio neque deserunt rem, alias maiores, quia tempore saepe repudiandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque dolores, tempora rem, autem at ea modi alias officiis quam vel delectus, maiores saepe cum magni? Iusto rem enim eligendi illum.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam eos
+          tempore placeat autem qui molestias quasi itaque incidunt vero quam
+          dicta unde vitae aliquid accusamus nesciunt facere accusantium, atque
+          ducimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+          neque necessitatibus ea, tempora maiores nihil. Distinctio rem tempore
+          rerum adipisci amet, atque quasi id eaque repudiandae consectetur
+          consequatur, sed velit?Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Ratione et voluptas debitis quidem odit sed ea
+          nulla, quisquam optio ipsa saepe aspernatur nisi labore iusto illum
+          non alias! Facere, repudiandae. Lorem ipsum dolor, sit amet
+          consectetur adipisicing elit. In accusamus iusto architecto provident
+          vero corrupti ipsum praesentium expedita commodi dolor optio neque
+          deserunt rem, alias maiores, quia tempore saepe repudiandae. Lorem
+          ipsum dolor sit amet, consectetur adipisicing elit. Itaque dolores,
+          tempora rem, autem at ea modi alias officiis quam vel delectus,
+          maiores saepe cum magni? Iusto rem enim eligendi illum.
         </p>
-        <h3 id="dance">About dance</h3>
+      </div>
+
+      <div id="dance" data-aos="fade-right">
+        <h3>About dance</h3>
         <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque repudiandae excepturi cum deserunt explicabo repellendus dolorum! Ex vero, dolorem facilis suscipit deserunt deleniti! Corrupti aliquam, impedit ratione eveniet libero adipisci! Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia pariatur numquam eveniet, odit saepe voluptatum vitae tempora nam blanditiis sunt harum commodi expedita minus odio sint cumque repellendus vel tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta vitae sunt doloremque recusandae a fugit mollitia, reiciendis et atque esse, dicta veniam repudiandae dignissimos laudantium est officiis dolore? Aliquam, reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos cupiditate quibusdam, voluptas molestiae rem molestias unde earum at non, quasi ex omnis corrupti? Voluptatem deleniti fugit autem quaerat tempora accusamus? Lorem
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
+          repudiandae excepturi cum deserunt explicabo repellendus dolorum! Ex
+          vero, dolorem facilis suscipit deserunt deleniti! Corrupti aliquam,
+          impedit ratione eveniet libero adipisci! Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Mollitia pariatur numquam eveniet, odit
+          saepe voluptatum vitae tempora nam blanditiis sunt harum commodi
+          expedita minus odio sint cumque repellendus vel tempore! Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Soluta vitae sunt
+          doloremque recusandae a fugit mollitia, reiciendis et atque esse,
+          dicta veniam repudiandae dignissimos laudantium est officiis dolore?
+          Aliquam, reprehenderit. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Eos cupiditate quibusdam, voluptas molestiae rem
+          molestias unde earum at non, quasi ex omnis corrupti? Voluptatem
+          deleniti fugit autem quaerat tempora accusamus? Lorem
         </p>
-        <h3 id="singing">About singing</h3>
+      </div>
+      <div id="singing" data-aos="fade-left">
+        <h3>About singing</h3>
         <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error tenetur ab ipsum suscipit, pariatur ducimus aliquid, rem nobis blanditiis reiciendis quas cumque repellat adipisci, velit magni eum dolorum soluta itaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptas cum minima mollitia, tempora sint saepe id excepturi inventore nobis quisquam ullam? Dignissimos alias delectus incidunt at aperiam voluptates praesentium! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam itaque quia enim sunt harum, doloribus eligendi sit vel nihil voluptates repellat iusto vero atque. Aliquid, atque ad. Voluptatum, fugiat voluptates! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam modi nobis autem dolore consequatur laborum consectetur optio quia laudantium perferendis labore explicabo eaque soluta voluptate, nulla praesentium sint voluptatum recusandae. lro
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptates, amet sit, excepturi nesciunt praesentium deleniti nobis iure ratione quod error provident saepe et labore, tempora consectetur voluptatibus? Magni, blanditiis?
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error
+          tenetur ab ipsum suscipit, pariatur ducimus aliquid, rem nobis
+          blanditiis reiciendis quas cumque repellat adipisci, velit magni eum
+          dolorum soluta itaque? Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Consectetur voluptas cum minima mollitia, tempora
+          sint saepe id excepturi inventore nobis quisquam ullam? Dignissimos
+          alias delectus incidunt at aperiam voluptates praesentium! Lorem ipsum
+          dolor, sit amet consectetur adipisicing elit. Quisquam itaque quia
+          enim sunt harum, doloribus eligendi sit vel nihil voluptates repellat
+          iusto vero atque. Aliquid, atque ad. Voluptatum, fugiat voluptates!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam modi
+          nobis autem dolore consequatur laborum consectetur optio quia
+          laudantium perferendis labore explicabo eaque soluta voluptate, nulla
+          praesentium sint voluptatum recusandae. lro Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Neque voluptates, amet sit, excepturi
+          nesciunt praesentium deleniti nobis iure ratione quod error provident
+          saepe et labore, tempora consectetur voluptatibus? Magni, blanditiis?
         </p>
+      </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
