@@ -11,10 +11,10 @@
         .section{
             padding-left: 1rem;
             background-color: rgb(120, 186, 153);
-            width: 50%;
+            width: 30%;
             border: 2px solid ;
             border-radius: 7px;
-            
+            padding-bottom: 3rem;
         }
         #form{
             margin: 0 auto;
@@ -47,6 +47,7 @@
             display: flex;
             justify-content: space-evenly;
             align-items: center;
+            padding-top: 3rem;
         }
     </style>
     <section class="container">
@@ -88,7 +89,7 @@
             <br>
             <textarea name="remarks" id="remarks" cols="30" rows="10"></textarea>
             <br>
-            <button type="submit" name="" id="submit" onsubmit="return validate(event)">submit</button>
+            <button type="submit" name="" id="submit" onclick="return validate()">submit</button>
         </form>
     </section>
     <section class="lottie">

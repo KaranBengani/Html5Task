@@ -38,6 +38,7 @@
         .col-count {
           column-count: 2;
         }
+
         a {
           text-decoration: none;
         }
@@ -45,6 +46,11 @@
       .back {
         right: 10%;
         bottom: 10%;
+      }
+      @media screen and (max-width: 660px) {
+        .col-count {
+          column-count: 1;
+        }
       }
     </style>
 
@@ -60,14 +66,6 @@
           >Singing</a
         >
       </div>
-
-      <a
-        href="#top"
-        type="button"
-        class="btn btn-outline-success position-fixed back"
-      >
-        Back to Top</a
-      >
 
       <h1 id="top">About the blog</h1>
       <p>
